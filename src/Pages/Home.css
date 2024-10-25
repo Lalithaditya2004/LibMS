@@ -1,0 +1,68 @@
+.home{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background-image: url('/src/assets/lib2.jpg');
+    background-size:cover;    
+    background-position: left;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.left{
+    height: 100%;
+    width: 50%;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    
+}
+
+.log{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.log h1{
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 10;
+  font-size: 50px;
+  margin-left: 30px;
+
+}
+.log h3{
+    margin-top: 15px;
+  color: rgb(83, 81, 81);
+}
+.log input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    width: 250px;
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.log button{
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}

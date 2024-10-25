@@ -1,0 +1,26 @@
+.navbar{
+    margin-left: 0px;
+    color: rgb(247, 241, 241);
+    text-decoration: none;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(2, 2, 2);
+    z-index: 99;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:10px;
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.navbar .left img{
+    padding-top: 3px;
+    width: 70px;
+}
+.left img:hover{
+    cursor: pointer;
+}

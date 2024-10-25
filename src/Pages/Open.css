@@ -1,0 +1,36 @@
+.open{
+    display: flex;
+    align-items: center;
+    height: 89vh;
+    width: 100%;
+    /* background-color: blue; */
+    
+    
+}
+
+
+
+.righty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.righty button{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 9.5px;
+    cursor: pointer;
+}
+
+.righty button:hover{
+    background-color: #424141;
+}

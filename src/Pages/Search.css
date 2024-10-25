@@ -1,0 +1,38 @@
+.search{
+    background-color: rgb(249, 249, 249);
+    height: 89vh;
+    width: 100%;
+    display: flex;
+}
+
+.search-area{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+
+.search-area input{
+    width: 70vh;
+    height: 40px;
+    margin-top: 40px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 560;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.search-area button{
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
