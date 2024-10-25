@@ -1,4 +1,8 @@
 # React + Vite
+To host locally run in terminal:
+npm run dev 
+and then click on the link provided
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
