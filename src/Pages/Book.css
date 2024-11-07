@@ -1,0 +1,50 @@
+.addBook{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    padding-top: 75px;
+}
+
+.addui{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 100px;
+    padding-left: 250px;
+    gap: 10px
+}
+.adduic1{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.adduic1 h1{
+    padding-bottom: 10px;
+    font-size: 20px;
+    width:70px
+    
+}
+.adduic2 h1{
+    font-weight: 800;
+    font-size: 50px;
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+
+.addui button{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+

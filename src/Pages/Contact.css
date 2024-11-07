@@ -1,0 +1,48 @@
+.contact{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    padding-top: 75px;
+}
+
+.conmain{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    height: 89vh;
+
+}
+
+
+.conmain h1 {
+    color: #000000;
+    text-align: center;
+    display: flex;
+}
+.conmain p {
+    color: #232323;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    gap: 12px;
+}
+.librarian {
+    margin-bottom: 10px;
+}
+.librarian strong {
+    font-size: 1.2em;
+    color: #2d2c2c;
+    display: flex;
+}
+.librarian a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+.librarian a:hover {
+    text-decoration: underline;
+}

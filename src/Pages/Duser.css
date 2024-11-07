@@ -1,0 +1,33 @@
+.duser{
+    display: flex;
+    height: 89vh;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.duserr{
+    padding-left: 36vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-left: 150px;
+    text-align: left;
+
+}
+
+.duserr h1{
+    font-size: 50px;
+    padding-bottom: 60px;
+    
+}
+
+.duskr{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.duskr h3{
+    font-size: 25px;
+}

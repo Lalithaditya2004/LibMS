@@ -1,0 +1,30 @@
+.ufines{
+    display: flex;
+    height: 89vh;
+    width: 100%;
+}
+
+.ufr{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.ufri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.ufri p{
+    font-size: 10em;
+    font-weight: 400;
+}

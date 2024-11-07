@@ -1,0 +1,35 @@
+.ausers{
+    display: flex;
+    height: 89vh;
+    padding-top: 75px;
+    width: 100%;
+}
+
+.ausrsr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    margin-left: 36vh;
+    padding-top: 50px;
+    
+}
+.ausrsr h1{
+    font-size: 3em;
+    padding-bottom: 40px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.aus1{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.aus1 h3{
+    width: 200px;
+    text-align: left;
+    font-size: 1.5em;
+}

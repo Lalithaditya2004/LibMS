@@ -6,6 +6,7 @@
     height: 75px;
     background-color: rgb(2, 2, 2);
     z-index: 99;
+    position: fixed;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .left{
@@ -20,7 +21,4 @@
 .navbar .left img{
     padding-top: 3px;
     width: 70px;
-}
-.left img:hover{
-    cursor: pointer;
 }

@@ -1,0 +1,42 @@
+.userhome{
+    width:100%;
+    height: 89vh;
+    display: flex;
+}
+
+.hrighty{
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-right: 30px;
+    height: 89vh;
+    width: 100%;
+}
+
+
+hr{
+    width: 1165px;
+    height: 4px;
+    background-color: black;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.imm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.immin img{
+    height: 100px;
+    margin-top: 50px;
+}
+.immin img,h2:hover{
+    cursor: pointer;
+}
+
+.immin h2{
+    padding-top: 20px;
+}
+

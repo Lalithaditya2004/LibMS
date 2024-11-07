@@ -1,0 +1,17 @@
+.mauthor{
+    display: flex;
+    height: 89vh;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.mauthor-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-left: 36vh;
+    height: 89vh;
+    width: 100%;
+
+}

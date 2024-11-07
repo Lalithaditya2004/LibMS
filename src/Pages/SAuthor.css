@@ -1,37 +1,38 @@
-.search{
+.asearch{
     background-color: rgb(249, 249, 249);
-    height: 190vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     padding-top: 75px;
     
 }
 
-.search-area{
+.asearch-area{
     
     display: flex;
     flex-direction: column;
-    padding-left: 250px;
+    padding-left: 100px;
     padding-top: 100px;
-    height: 115vh;
+    height: 89vh;
     width: 100%;
+    margin-left: 36vh;
     
 }
 
-.search-area h1{
+.asearch-area h1{
     font-size: 45px;
     display: flex;
     padding-left: 100px;
 }
 
-.boxy{
+.aboxy{
     display: flex;
     gap: 25px;
     padding-left: 100px;
 }
 
 
-.boxy input{
+.aboxy input{
     width: 70vh;
     height: 40px;
     margin-top: 40px;
@@ -40,32 +41,24 @@
     font-weight: 560;
     padding-left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    margin-bottom: 100px;
 }
 
-.booky-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .booky-table th,
-  .booky-table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+.author-details{
+    display: flex;
+    flex-direction: column;
     text-align: left;
-  }
-  
-  .booky-table th {
-    background-color: #222222;
-    color: white;
-  }
-  
-  .booky-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .booky-table tr:hover {
-    background-color: #f1f1f1;
-  }
+    padding-left: 100px;
+}
+.author-details h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.author-details p{
+    font-size: 20px;
+}
+.author-details strong{
+    width: 10px;
+    padding-right: 5px;
+}

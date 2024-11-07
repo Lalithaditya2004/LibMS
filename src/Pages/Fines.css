@@ -1,0 +1,50 @@
+.addFines{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    padding-top: 75px;
+}
+
+.addfi{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 100px;
+    gap: 10px
+}
+.addfic1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.addfic1 h1{
+    padding-bottom: 10px;
+    font-weight: 150;
+    font-size: larger;
+    width:100px
+    
+}
+.addfic2 h1{
+    font-weight: 800;
+    font-size: 50px;
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+
+.addfi button{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+

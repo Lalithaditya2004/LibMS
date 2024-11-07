@@ -1,6 +1,7 @@
 .home{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
+    padding-top: 75px;
     display: flex;
     background-image: url('/src/assets/lib2.jpg');
     background-size:cover;    
@@ -38,8 +39,15 @@
     "Lucida Sans", Arial, sans-serif;
   font-weight: 10;
   font-size: 50px;
-  margin-left: 30px;
 
+}
+.log hr{
+    height: 2px;
+    width: 150%;
+    border: none;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .log h3{
     margin-top: 15px;

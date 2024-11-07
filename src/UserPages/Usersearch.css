@@ -1,0 +1,41 @@
+.usersearch{
+    height: 89vh;
+    display:flex;
+
+}
+
+.ussr{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 100px;
+    
+}
+
+
+.ussr h1{
+    font-size: 45px;
+    display: flex;
+    padding-left: 100px;
+}
+
+.ussrboxy{
+    display: flex;
+    gap: 25px;
+    padding-left: 100px;
+}
+
+
+.ussrboxy input{
+    width: 70vh;
+    height: 40px;
+    margin-top: 40px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 560;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

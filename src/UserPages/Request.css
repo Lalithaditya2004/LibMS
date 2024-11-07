@@ -1,0 +1,32 @@
+.request{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+}
+
+.reqr{
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 20px;
+
+}
+
+.reqr hr{
+    margin-bottom: 50px;
+}
+
+.reqi{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.reqi h2{
+    width: 200px;
+}

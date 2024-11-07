@@ -3,6 +3,7 @@
     align-items: center;
     height: 89vh;
     width: 100%;
+    padding-top: 150px;
     /* background-color: blue; */
     
     
@@ -15,7 +16,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-left: 36vh;
+    height: 89vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
@@ -33,4 +35,7 @@
 
 .righty button:hover{
     background-color: #424141;
+}
+.righty .heading h1{
+    font-size: 56px;
 }
