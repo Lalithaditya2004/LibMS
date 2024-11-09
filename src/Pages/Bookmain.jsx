@@ -1,9 +1,22 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Left from '../components/lefty'
 import './Bookmain.css'
 import BB from '../components/BB'
+import { useNavigate } from 'react-router-dom';
+
 
 function Bookmain() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  
+    } 
+  }, [navigate]);
+
+ 
   return (
     <div className="bookmain">
         <Left/>

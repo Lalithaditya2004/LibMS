@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Request.css';
 import Left from '../components/lefty';
+import { useNavigate } from 'react-router-dom';
 
 function Request() {
   const [requests, setRequests] = useState([]);
+  const navigate = useNavigate();
 
+ 
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  
+    } 
+    else{
+
+    
     const fetchRequests = async () => {
       try {
         const response = await fetch('https://fastapitestserver.crescentp.tech/request/'); // Replace with actual API endpoint
@@ -21,7 +32,8 @@ function Request() {
     };
 
     fetchRequests();
-  }, []);
+  }
+  }, [navigate]);
 
   return (
     <div className="request">

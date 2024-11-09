@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Left from '../components/lefty';
 import './Search.css';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/BB';
 
 function Search() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/"); 
+    }
+  }, [navigate]);
+
   const [bookName, setBookName] = useState('');
   const [books, setBooks] = useState([]);
 

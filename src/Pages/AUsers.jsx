@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AUsers.css';
 import Left from '../components/lefty';
 import Input from '../components/Input';
 import BB from '../components/BB';
+import { useNavigate } from 'react-router-dom';
 
 function AUsers() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  
+    }
+  }, [navigate]);
+
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');

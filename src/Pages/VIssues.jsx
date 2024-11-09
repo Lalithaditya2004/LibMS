@@ -1,27 +1,46 @@
 import React, { useEffect, useState } from 'react';
 import './VIssues.css';
 import Left from '../components/lefty';
+import { useNavigate } from 'react-router-dom';
 
 function VIssues() {
+
   const [issues, setIssues] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [fetchError, setFetchError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchIssues = async () => {
-      try {
-        const response = await fetch('https://fastapitestserver.crescentp.tech/bookissues/');
-        if (!response.ok) {
-          throw new Error('Failed to fetch issues');
+    const checkTokenAndFetchIssues = async () => {
+      const token = localStorage.getItem("token");
+      console.log("Token:", token);
+
+      if (!token) {
+        console.log("No token found, navigating to home.");
+        navigate("/"); 
+      } else {
+        console.log("Token found, setting isLoading to false.");
+     
+
+        try {
+          console.log("Fetching issues...");
+          const response = await fetch('https://fastapitestserver.crescentp.tech/bookissues/');
+          
+          if (!response.ok) {
+            throw new Error('Failed to fetch issues');
+          }
+
+          const data = await response.json();
+          console.log("Fetched issues:", data);
+          setIssues(data);
+        } catch (error) {
+          console.error("Error fetching issues:", error);
+          setFetchError('Failed to load issues. Please try again later.');
         }
-        const data = await response.json();
-        setIssues(data);
-      } catch (error) {
-        console.error(error);
-      } 
+      }
     };
 
-    fetchIssues();
-  }, []);
+    checkTokenAndFetchIssues();
+  }, [navigate]);
 
 
   return (
@@ -29,7 +48,9 @@ function VIssues() {
       <Left />
       <div className="vis">
         <h1>All Issues</h1>
-        {issues.length > 0 ? (
+        {fetchError ? (
+          <p className="error-message">{fetchError}</p>
+        ) : issues.length > 0 ? (
           <table className="issues-table">
             <thead>
               <tr>
@@ -42,8 +63,8 @@ function VIssues() {
             <tbody>
               {issues.map((issue, index) => (
                 <tr key={index}>
-                  <td>{issue.student_id}</td>
-                  <td>{issue.book_id}</td>
+                  <td>{issue.student.name}</td>
+                  <td>{issue.book.book_name}</td>
                   <td>{new Date(issue.issue_date).toLocaleDateString()}</td>
                   <td>{new Date(issue.due_date).toLocaleDateString()}</td>
                 </tr>

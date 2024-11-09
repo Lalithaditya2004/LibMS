@@ -27,6 +27,7 @@ import VIssues from './Pages/VIssues.jsx'
 import Requests from './Pages/Request.jsx'
 import VUsers from './Pages/VUsers.jsx'
 import DUser from './Pages/Duser.jsx'
+import Returns from './Pages/Returns.jsx'
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
         <Route path='/admin/requests' element={<Requests/>}/>
         <Route path='/admin/viewusers' element={<VUsers/>}/>\
         <Route path='/admin/user/delusers' element={<DUser/>}/>
+        <Route path='/admin/returns' element={<Returns/>}/>
 
       </Routes>
       

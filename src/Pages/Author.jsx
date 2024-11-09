@@ -1,9 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Author.css'
 import Left from '../components/lefty'
 import Search from '../components/Input'
+import { useNavigate } from 'react-router-dom';
 
 function Author() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  // Redirect to login if no token
+    }
+  }, [navigate]);
+
+  
   const [name,Setname] = useState('');
   const [phone,Setphone] = useState('');
   const [email,Setemail] = useState('');

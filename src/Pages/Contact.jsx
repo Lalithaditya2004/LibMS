@@ -1,8 +1,8 @@
 import React from 'react'
 import Uleft from '../components/Userlefty'
 import './Contact.css'
-
 function Contact() {
+  
   return (
     <div className="contact">
         <Uleft/>

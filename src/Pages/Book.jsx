@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Left from '../components/lefty';
 import Input from '../components/Input';
 import './Book.css';
+import { useNavigate } from 'react-router-dom';
 
 function Book() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  
+    }
+  }, [navigate]);
+
+  
   const [title, setTitle] = useState('');
   const [auth, setAuth] = useState('');
   const [price, setPrice] = useState('');

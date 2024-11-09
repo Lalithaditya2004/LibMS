@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './DUser.css';
 import Left from '../components/lefty';
 import Input from '../components/Input';
 import Button from '../components/BB';
+import { useNavigate } from 'react-router-dom';
 
 function DUser() {
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+      const token = localStorage.getItem("token");
+      console.log(token);
+      if (!token) {
+        navigate("/");  
+      } 
+    }, [navigate]);
+  
+    
     const [userId, setUserId] = useState(0);
 
     const handleNumericChange = (setter) => (e) => {

@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import './VUsers.css';
 import Left from '../components/lefty';
+import { useNavigate } from 'react-router-dom';
 
 function VUsers() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  
+    } 
+  }, [navigate]);
+
+  
   const [users, setUsers] = useState([]);
 
   useEffect(() => {

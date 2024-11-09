@@ -1,10 +1,23 @@
-import React,{ useState } from 'react'
+import React,{ useState , useEffect} from 'react'
 import './Dbook.css'
 import Left from '../components/lefty'
 import Input from '../components/Input'
 import Button from '../components/BB'
+import { useNavigate } from 'react-router-dom';
+
 
 function Dbook() {
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+      const token = localStorage.getItem("token");
+      console.log(token);
+      if (!token) {
+        navigate("/");  // Redirect to login if no token
+      }
+    }, [navigate]);
+  
+    
     const [bkid, setbkid] = useState(0);
     const handleNumericChange = (setter) => (e) => {
         const value = e.target.value;

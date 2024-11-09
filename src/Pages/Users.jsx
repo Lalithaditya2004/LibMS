@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './Users.css'
 import Left from '../components/lefty'
 import BB from '../components/BB'
+import { useNavigate } from 'react-router-dom';
 
 function Users() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (!token) {
+      navigate("/");  
+    }
+  }, [navigate]);
+
+ 
   return (
     <div className="users">
         <Left />

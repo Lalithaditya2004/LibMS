@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import './SAuthor.css';
 import Button from '../components/BB';
 import Left from '../components/lefty';
+import { useNavigate } from 'react-router-dom';
 
 function SAuthor() {
   const [authorId, setAuthorId] = useState('');
   const [author, setAuthor] = useState(null);
 
   const handleSearch = async () => {
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+      const token = localStorage.getItem("token");
+      console.log(token);
+      if (!token) {
+        navigate("/");  // Redirect to login if no token
+      }
+    }, [navigate]);
+  
+    
     setAuthor(null);
 
     try {
