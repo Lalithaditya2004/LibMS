@@ -3,9 +3,68 @@
     width: 100%;
     height: 100vh;
     padding-top: 75px;
+
 }
 
 .rtr{
     padding-left: 36vh;
-    
+    padding-top: 100px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
 }
+
+.rtr1{
+    display: flex;
+    gap: 50px;
+}
+
+.rtr h1{
+    font-size: 3em;
+    
+    padding-bottom: 45px;
+}
+
+.rtr1 h2{
+    width: 100px;
+}
+
+.reqs-table button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.reqs-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reqs-table th,
+  .reqs-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .reqs-table th {
+    background-color: #222222;
+    color: white;
+  }
+  
+  .reqs-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reqs-table tr:hover {
+    background-color: #f1f1f1;
+  }

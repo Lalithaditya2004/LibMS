@@ -47,7 +47,7 @@ function Search() {
 
 
         {books.length > 0 && (
-          <table className="booky-table">
+          <table className="bookys-table">
             <thead>
               <tr>
                 <th>Title</th>

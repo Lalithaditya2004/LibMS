@@ -1,17 +1,20 @@
 .usersearch{
-    height: 89vh;
+    height: 100vh;
     display:flex;
+    width: 100%;
+    padding-top: 75px;
 
 }
 
 .ussr{
-    height: 89vh;
+    /* height: 89vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 100px;
     padding-top: 100px;
-    
+    padding-right: 100px;
+    margin-left: 30vh;
 }
 
 
@@ -25,6 +28,7 @@
     display: flex;
     gap: 25px;
     padding-left: 100px;
+    
 }
 
 
@@ -36,6 +40,35 @@
     font-size: 20px;
     font-weight: 560;
     padding-left: 10px;
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+.booky1-table {
+    width: 100%;
+    margin-top: 20px;
+    
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booky1-table th,
+  .booky1-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .booky1-table th {
+    background-color: #222222;
+    color: white;
+  }
+  
+  .booky1-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .booky1-table tr:hover {
+    background-color: #f1f1f1;
+  }

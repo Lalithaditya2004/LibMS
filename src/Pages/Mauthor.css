@@ -5,13 +5,17 @@
     padding-top: 75px;
 }
 
-.mauthor-right{
+.mar{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 40px;
     padding-left: 36vh;
     height: 89vh;
     width: 100%;
 
 }
+.mar h1{
+    font-size: 50px;
+}
+

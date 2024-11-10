@@ -20,6 +20,7 @@ function Book() {
   const [auth, setAuth] = useState('');
   const [price, setPrice] = useState('');
   const [rackno, setRackno] = useState('');
+  const [num,setNum] = useState('')
 
   const handleNumericChange = (setter) => (e) => {
     const value = e.target.value;
@@ -31,6 +32,7 @@ function Book() {
     console.log("Author ID:", auth);
     console.log("Price:", price);
     console.log("Rack No:", rackno);
+    console.log("Number of books:", num);
 
     try {
       const response = await fetch('https://fastapitestserver.crescentp.tech/books/', {
@@ -45,7 +47,7 @@ function Book() {
           "author_id": auth,
           "price": price,
           "rack_no": rackno,
-          "no_of_books": 1
+          "no_of_books": num
         })
       });
 
@@ -84,10 +86,10 @@ function Book() {
           <h1>Rack No.</h1>
           <Input value={rackno.toString()} onChange={handleNumericChange(setRackno)} />
         </div>
-        {/* <div className="adduic1">
+        <div className="adduic1">
           <h1>Number of Books</h1>
           <Input value={num.toString()} onChange={handleNumericChange(setNum)} />
-        </div> */}
+        </div>
         
         <button onClick={addb}>Add</button>
       </div>

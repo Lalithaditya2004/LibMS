@@ -1,15 +1,18 @@
 .userhome{
     width:100%;
-    height: 89vh;
+    height: 100vh;
     display: flex;
+    padding-top: 75px;
+
 }
 
 .hrighty{
-    padding-left: 40px;
     padding-top: 50px;
     padding-right: 30px;
-    height: 89vh;
     width: 100%;
+    padding-left: 50px;
+    
+    margin-left: 30vh;
 }
 
 
@@ -20,23 +23,59 @@ hr{
     margin-top: 15px;
     margin-bottom: 30px;
 }
+.hrighty h2{
+    font-size: 30px;
+    text-align: left;
+}
 
 .imm{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
+    justify-content: left; 
+    gap: 80px;
 }
 
-.immin img{
-    height: 100px;
-    margin-top: 50px;
-}
-.immin img,h2:hover{
-    cursor: pointer;
+.imm input{
+    width: 70vh;
+    height: 40px;
+    margin-top: 40px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 560;
+    padding-left: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
-.immin h2{
-    padding-top: 20px;
-}
 
+
+
+
+.results-table {
+    width: 100%;
+    margin-top: 20px;
+    
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .results-table th {
+    background-color: #222222;
+    color: white;
+  }
+  
+  .results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .results-table tr:hover {
+    background-color: #f1f1f1;
+  }

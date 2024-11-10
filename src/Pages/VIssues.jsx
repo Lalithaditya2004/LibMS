@@ -54,8 +54,11 @@ function VIssues() {
           <table className="issues-table">
             <thead>
               <tr>
-                <th>Student ID</th>
+                
+              <th>Student ID</th>
+                <th>Student Name</th>
                 <th>Book ID</th>
+                <th>Book Name</th>
                 <th>Issue Date</th>
                 <th>Due Date</th>
               </tr>
@@ -63,7 +66,9 @@ function VIssues() {
             <tbody>
               {issues.map((issue, index) => (
                 <tr key={index}>
+                  <td>{issue.student_id}</td>
                   <td>{issue.student.name}</td>
+                  <td>{issue.book_id}</td>
                   <td>{issue.book.book_name}</td>
                   <td>{new Date(issue.issue_date).toLocaleDateString()}</td>
                   <td>{new Date(issue.due_date).toLocaleDateString()}</td>

@@ -37,6 +37,9 @@ function Home() {
         localStorage.setItem("token", data.token);
         navigate('/admin');
       }
+      else{
+        setError("Invalid username or password");
+      }
     } catch (err) {
       setError(err.message);
     }
