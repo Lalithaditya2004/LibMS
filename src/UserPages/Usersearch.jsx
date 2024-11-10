@@ -7,13 +7,7 @@ import Button from '../components/BB';
 function Search() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    console.log(token);
-    if (!token) {
-      navigate("/"); 
-    }
-  }, [navigate]);
+  
 
   const [bookName, setBookName] = useState('');
   const [books, setBooks] = useState([]);

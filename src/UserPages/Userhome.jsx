@@ -19,9 +19,9 @@ function Userhome() {
       <ULeft />
       <div className="hrighty">
         <div className="trans">
-          <h1>Transactions Details</h1>
+          <h1>Issue Details</h1>
           <hr />
-          <h2>UserID:</h2>
+          <h2>Enter your UserID:</h2>
           <div className="imm">
             <input
               value={id}

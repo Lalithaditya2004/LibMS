@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 
 function Home() {
@@ -52,7 +52,7 @@ function Home() {
       </div>
       <div className="right">
         <div className="log">
-          <h1>Login</h1>
+          <h1>Admin Login</h1>
           <hr />
           {error && <p className="error">{error}</p>}
           <h3>Username</h3>
@@ -69,6 +69,7 @@ function Home() {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter password"
           />
+          <Link to='/home'>Not Admin?</Link>
           <button onClick={handleLogin}>Sign in</button>
         </div>
       </div>
