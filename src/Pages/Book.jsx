@@ -56,7 +56,8 @@ function Book() {
       if (response.ok) {
         alert("Book added"); 
       } else {
-        alert("Failed to add Book");
+        const responseData = await response.json();
+        alert(responseData.detail);
       }
     }
     catch (error) {

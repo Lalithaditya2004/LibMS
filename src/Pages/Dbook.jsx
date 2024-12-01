@@ -32,7 +32,9 @@ function Dbook() {
         
         
         if(!response.ok) {
-            alert("Failed to Delete Book/Entered Book ID is not in database");
+          const responseData = await response.json();
+          alert(responseData.detail);
+            // alert("Failed to Delete Book/Entered Book ID is not in database");
         }
         else{
             alert("Deleted Book Succesfully");

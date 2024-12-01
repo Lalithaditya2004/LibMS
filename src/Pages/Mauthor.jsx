@@ -27,7 +27,7 @@ function Mauthor() {
       <div className="mauthor-right">
         
         <BB ll='/admin/author/addauthor'>Add Author</BB>
-        <BB ll='/admin/author/searchauthor'>Get Author</BB>
+        {/* <BB ll='/admin/author/searchauthor'>Get Author</BB> */}
         <BB ll='/admin/author/authors'>All Authors</BB>
       
       </div>

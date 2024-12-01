@@ -10,6 +10,7 @@ function Userhome() {
   const handlegetIssue = async () => {
     const response = await fetch(`https://fastapitestserver.crescentp.tech/bookissues/?student_id=${id}`);
     const issue = await response.json();
+    
     Setiss(issue);
     console.log(issue);
   };
@@ -19,7 +20,7 @@ function Userhome() {
       <ULeft />
       <div className="hrighty">
         <div className="trans">
-          <h1>Issue Details</h1>
+          <h1 className="just">Issue Details</h1>
           <hr />
           <h2>Enter your UserID:</h2>
           <div className="imm">

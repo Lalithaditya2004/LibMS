@@ -20,7 +20,7 @@ function VUsers() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('https://fastapitestserver.crescentp.tech/students/'); 
+        const response = await fetch('https://fastapitestserver.crescentp.tech/students/?limit=100'); 
         const data = await response.json();
         setUsers(data);
       } catch (err) {
@@ -35,7 +35,7 @@ function VUsers() {
     <div className="vusers">
       <Left />
       <div className="vur">
-        <h1>User List</h1>
+        <h1>Student List</h1>
         {(
           <table className="user-table">
             <thead>
@@ -45,7 +45,6 @@ function VUsers() {
                 <th>Email</th>
                 <th>Phone Number</th>
                 <th>Address</th>
-                <th>Status</th>
                 <th>Date of Issue</th>
                 <th>Date of Expiry</th>
               </tr>
@@ -58,7 +57,6 @@ function VUsers() {
                   <td>{user.email}</td>
                   <td>{user.phone_number}</td>
                   <td>{user.address}</td>
-                  <td>{user.status}</td>
                   <td>{new Date(user.date_of_issue).toLocaleDateString()}</td>
                   <td>{new Date(user.date_of_expiry).toLocaleDateString()}</td>
                 </tr>

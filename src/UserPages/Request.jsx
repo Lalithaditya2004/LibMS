@@ -49,10 +49,10 @@ function Request() {
           <h2>ISBN:</h2>
           <Input value={isbn} onChange={(e) => setIsbn(e.target.value)} />
         </div>
-        <div className="reqi">
+        {/* <div className="reqi">
           <h2>Publisher:</h2>
           <Input value={publisher} onChange={(e) => setPublisher(e.target.value)} />
-        </div>
+        </div> */}
         <BB onClick={handleRequest}>Request</BB>
       </div>
     </div>

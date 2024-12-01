@@ -24,6 +24,7 @@ function Search() {
     try {
       const response = await fetch(`https://fastapitestserver.crescentp.tech/books/?book_name=${bookName}`); 
       const data = await response.json();
+      setBooks(data.sort((a, b) => a.book_code - b.book_code));
       setBooks(data);
     } catch (err) {
       console.log(err);
@@ -50,21 +51,27 @@ function Search() {
           <table className="bookys-table">
             <thead>
               <tr>
-                <th>Title</th>
-                <th>Author ID</th>
+              <th>Title</th>
+                <th>BookID</th>
+                <th>Author</th>
+                <th>AuthorID</th>
                 <th>Price</th>
-                <th>Rack No</th>
-                <th>Book Code</th>
+                <th>Status</th>
+                <th>Rack No.</th>
+                
               </tr>
             </thead>
             <tbody>
               {books.map((book) => (
                 <tr key={book.book_code}>
                   <td>{book.book_name}</td>
-                  <td>{book.author_id}</td>
-                  <td>${book.price}</td>
-                  <td>{book.rack_no}</td>
                   <td>{book.book_code}</td>
+                  <td>{book.author_name}</td>
+                  <td>{book.author_id}</td> 
+                  <td>{book.price}</td>
+                  <td>{(book.no_of_books > 0)? book.no_of_books + " Available" : "Checked out"}</td>
+                  <td>{book.rack_no}</td>
+                  
                 </tr>
               ))}
             </tbody>

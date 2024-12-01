@@ -28,7 +28,7 @@ function AUsers() {
       address,
       email,
       phone_number: phoneNumber,
-      status: 1, // Hardcoded as required
+      status: 1, 
     };
 
     try {
@@ -41,13 +41,17 @@ function AUsers() {
       });
 
       if (response.ok) {
-        alert('User added successfully');
+        const responseData = await response.json();
+        
+        alert('User added successfully, UserID: '+responseData.id_no);
+        
         setName('');
         setEmail('');
         setPhoneNumber('');
         setAddress('');
       } else {
-        alert('Failed to add user');
+        const responseData = await response.json();
+        alert(responseData.detail);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -58,7 +62,7 @@ function AUsers() {
     <div className="ausers">
       <Left />
       <div className="ausrsr">
-        <h1>Add User</h1>
+        <h1>Add Student</h1>
         <div className="aus1">
           <h3>User Name: </h3>
           <Input value={name} onChange={(e) => setName(e.target.value)} />

@@ -43,9 +43,10 @@ function Issues() {
       if (response.ok) {
         alert('Book issued successfully');
       } else {
+        
         const data = await response.json();
         console.error("Error response from server:", data);
-        alert('Book not issued');
+        alert(data.detail);
       }
     } catch (error) {
       console.error("Error in issueBook function:", error);

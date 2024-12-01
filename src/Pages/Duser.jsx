@@ -31,7 +31,9 @@ function DUser() {
             });
 
             if (!response.ok) {
-                alert("Failed to delete user / Entered User ID is not in the database");
+                const responseData = await response.json();
+                alert(responseData.detail);
+                // alert("Failed to delete user / Entered User ID is not in the database");
             } else {
                 alert("User deleted successfully");
             }
@@ -44,9 +46,9 @@ function DUser() {
         <div className="duser">
             <Left />
             <div className="duserr">
-                <h1>Delete User</h1>
+                <h1>Delete Student</h1>
                 <div className="duskr">
-                    <h3>User ID:</h3>
+                    <h3>Student ID:</h3>
                     <Input value={userId.toString()} onChange={handleNumericChange(setUserId)} />
                 </div>
                 <Button onClick={deleteUser}>Delete</Button>

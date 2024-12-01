@@ -20,11 +20,11 @@ function Users() {
     <div className="users">
         <Left />
         <div className="usr">
-            <h1>Users</h1>
+            <h1>Students</h1>
             <div className="usr1">
-              <div className="usr11"><BB ll={'/admin/viewusers'}>View Users</BB></div>
-              <div className="usr11"><BB ll={'/admin/users/adduser'}>Add User</BB></div>
-              <div className="usr11"><BB ll={'/admin/user/delusers'}>Delete User</BB></div>
+              <div className="usr11"><BB ll={'/admin/viewusers'}>View Students</BB></div>
+              <div className="usr11"><BB ll={'/admin/users/adduser'}>Add Student</BB></div>
+              <div className="usr11"><BB ll={'/admin/user/delusers'}>Delete Student</BB></div>
               {/* <div className="usr11"><BB>Update User</BB></div> */}
             </div>
         </div>

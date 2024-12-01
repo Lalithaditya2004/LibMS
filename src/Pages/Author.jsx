@@ -48,7 +48,8 @@ function Author() {
         alert("Author added"); 
       }
       else{
-        alert("Failed to add Author");
+        const responseData = await response.json();
+        alert(responseData.detail);
       }
     }
     catch(error){

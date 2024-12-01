@@ -52,19 +52,20 @@ function Vbook() {
               </tr>
             </thead>
             <tbody>
-              {books.map((book) => (
-                <tr key={book.book_code}>
-                  <td>{book.book_name}</td>
-                  <td>{book.book_code}</td>
-                  <td>{book.author_name}</td>
-                  <td>{book.author_id}</td> 
-                  <td>{book.price}</td>
-                  <td>{(book.no_of_books > 0)? book.no_of_books + " Available" : "Checked out"}</td>
-                  <td>{book.rack_no}</td>
-                  
-                  <td>{new Date(book.date_of_arrival).toLocaleDateString()}</td>
-                </tr>
-              ))}
+            {books
+    .sort((a, b) => a.book_code - b.book_code) // Sort books by Book ID
+    .map((book) => (
+      <tr key={book.book_code}>
+        <td>{book.book_name}</td>
+        <td>{book.book_code}</td>
+        <td>{book.author_name}</td>
+        <td>{book.author_id}</td> 
+        <td>{book.price}</td>
+        <td>{(book.no_of_books > 0) ? book.no_of_books + " Available" : "Checked out"}</td>
+        <td>{book.rack_no}</td>
+        <td>{new Date(book.date_of_arrival).toLocaleDateString()}</td>
+      </tr>
+    ))}
             </tbody>
           </table>
         )}
